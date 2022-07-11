@@ -1,0 +1,35 @@
+name: "Build and upload to CDN"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  deploy_to_cdn:
+    runs_on: ubuntu-latest
+
+    steps:
+    - name: Checkout the release
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.release.tag_name }}
+    
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node_version: 16.x
+    
+    - name: Build
+      run: |
+        npm install
+        npx webpack --mode=production
+    
+    - name: Upload to CDN
+      run: BetaHuhn/do-spaces-action@v2
+      with:
+        access_key: ${{ secrets.ACCESS_KEY}}
+        secret_key: ${{ secrets.SECRET_KEY }}
+        space_name: ${{ secrets.SPACE_NAME }}
+        space_region: ${{ secrets.SPACE_REGION }}
+        out_dir: ${{ secrets.SPACE_PATH }}
+        source: dist/bundle.js

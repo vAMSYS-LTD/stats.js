@@ -1,4 +1,4 @@
-import { PendingModifier } from "./modifiers/pending-modifier";
+import { PendingModifier, StatisticSelector } from "./modifiers/pending-modifier";
 import { ConfigurationService } from "./services/config-service";
 import { LoggingService } from "./services/logging-service";
 import { StatisticsService } from "./services/statistics-service";
