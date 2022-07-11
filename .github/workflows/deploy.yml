@@ -23,7 +23,7 @@ jobs:
         npx webpack --mode=production
     
     - name: Upload to CDN
-      run: BetaHuhn/do-spaces-action@v2
+      uses: BetaHuhn/do-spaces-action@v2
       with:
         access_key: ${{ secrets.ACCESS_KEY}}
         secret_key: ${{ secrets.SECRET_KEY }}
