@@ -18,7 +18,6 @@ export class StatisticsService {
 
     if (response.ok) {
       this.stats = await data;
-      console.log(this.stats);
       return Promise.resolve();
     } else {
       return Promise.reject();
