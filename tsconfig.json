@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",,
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "outFile": "dist/stats.js"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

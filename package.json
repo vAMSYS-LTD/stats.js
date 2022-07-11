@@ -1,0 +1,25 @@
+{
+  "name": "stats.js",
+  "version": "0.1.0",
+  "description": "A JavaScript script for displaying statistics from vAMSYS",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vAMSYS-LTD/stats.js.git"
+  },
+  "author": {
+    "name": "George Peppard",
+    "email": "george@vamsys.io",
+    "url": "https://vamsys.co.uk"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vAMSYS-LTD/stats.js/issues"
+  },
+  "homepage": "https://github.com/vAMSYS-LTD/stats.js#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "typescript": "^4.7.4"
+  }
+}
