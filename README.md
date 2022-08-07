@@ -1,7 +1,6 @@
 # stats.js
 
-stats.js is a JavaScript script for displaying statistics from [vAMSYS](https://vamsys.co.uk) customers' virtual airlines on the customer's own website. The script is currently a work-in-progress,
-and no stable release is available yet.
+stats.js is a JavaScript script for displaying statistics from [vAMSYS](https://vamsys.co.uk) customers' virtual airlines on the customer's own website.
 
 ## Usage
 
